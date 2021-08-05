@@ -1,5 +1,6 @@
 package io.hexlet.xo.model;
 
+import io.hexlet.xo.model.exceptions.InvalidPointException;
 import org.junit.Test;
 
 import java.awt.*;
@@ -15,7 +16,7 @@ public class FieldTest {
     }
 
     @Test
-    public void setFigure() {
+    public void setFigure() throws InvalidPointException {
         final Field field = new Field();
         final Point point = new Point(0,0);
         final Figure figure = Figure.O;
