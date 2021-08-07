@@ -11,13 +11,13 @@ public class FieldTest {
 
     @Test
     public void getFIELD_SIZE() {
-        final Field field = new Field();
+        final Field field = new Field(3);
         assertEquals(3, field.getFIELD_SIZE());
     }
 
     @Test
     public void setFigure() throws InvalidPointException {
-        final Field field = new Field();
+        final Field field = new Field(3);
         final Point point = new Point(0,0);
         final Figure figure = Figure.O;
 
