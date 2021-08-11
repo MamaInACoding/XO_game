@@ -12,7 +12,7 @@ public class FieldTest {
     @Test
     public void getFIELD_SIZE() {
         final Field field = new Field(3);
-        assertEquals(3, field.getFIELD_SIZE());
+        assertEquals(3, field.getSize());
     }
 
     @Test
