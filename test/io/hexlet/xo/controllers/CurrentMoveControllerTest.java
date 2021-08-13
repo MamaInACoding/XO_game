@@ -19,7 +19,7 @@ public class CurrentMoveControllerTest {
             field.setFigure(new Point(i, 0), Figure.X);
             field.setFigure(new Point(i, 1), Figure.O);
             field.setFigure(new Point(i, 2), Figure.X);
-            assertEquals(Figure.O, currentMoveController.currentFigure(field));
+            assertEquals(Figure.O, currentMoveController.currentMove(field));
         }
     }
 
@@ -30,7 +30,7 @@ public class CurrentMoveControllerTest {
             final Field field = new Field(3);
             field.setFigure(new Point(i, 1), Figure.O);
             field.setFigure(new Point(i, 2), Figure.X);
-            assertEquals(Figure.X, currentMoveController.currentFigure(field));
+            assertEquals(Figure.X, currentMoveController.currentMove(field));
         }
     }
 
@@ -47,8 +47,7 @@ public class CurrentMoveControllerTest {
         field.setFigure(new Point(2, 0), Figure.O);
         field.setFigure(new Point(2, 1), Figure.X);
         field.setFigure(new Point(2, 2), Figure.O);
-        assertNull(currentMoveController.currentFigure(field));
+        assertNull(currentMoveController.currentMove(field));
     }
 
 }
-
